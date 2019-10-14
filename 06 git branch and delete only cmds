@@ -1,0 +1,59 @@
+Basics of Git Merging and Deleting Branches
+
+Branching can help you keep your work organized. 
+However, you need to be able to merge your work in order to make the work coherent. 
+If you never merge and delete the branches, your history might become too chaotic to understand.
+Working with Merging and Branch Delete
+Let’s first create a master branch, put in a few commits, create a new branch called features, add a few commits, 
+then come back to master and commit again. Here are the commands:
+
+$ mkdir mygame
+$ cd mygame
+$ git init
+$ echo "Design Decision 1: Brainstarm" >> design.txt
+$ git add -A
+$ git commit -m "C0: Started Project"
+$ echo "Design Decision 2: Write Code" >> design.txt
+$ git add -A
+$ git commit -m "C1: Submitted Code"
+
+$ git branch features
+$ git checkout features
+$ echo "Add Feature 1" >> feature.txt
+$ git add -A
+$ git commit -m "C2: Feature 1"
+$ echo "Add Feature 2" >> feature.txt
+$ git add -A
+$ git commit -m "C3: Feature 2"
+
+$ git checkout master
+$ echo "Modifying Master Again" >> design.txt
+$ git add -A
+$ git commit -m "C4: Master Modified"
+
+The above commands created the following situation:
+
+You can check the history of the two branches to see what commits they have:
+
+$ git status
+
+$ git log --oneline
+ 
+$ git checkout features
+ 
+$ git log --oneline
+
+$ git checkout master
+ 
+$ git status
+ 
+$ git status
+ 
+$ git log --oneline
+
+$ git branch -a
+$ git branch -d features
+$ git branch -a
+
+Conclusion
+Make sure you regularly check for unused branches and delete them. You want to keep your repository clean to make it easy to navigate and understand.

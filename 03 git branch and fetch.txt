@@ -1,0 +1,22 @@
+$ mkdir test-repositories 
+$ cd test-repositories/ 
+$ git clone https://github.com/chinnajee/test6.git
+$ git branch test1
+$ git checkout test1
+$ git branch
+$ vi editme.html
+	<div class="quote">  
+	<blockquote>This is a quote, and I like it.</blockquote>   
+	<cite>A quote: The Art of Quoting</cite>
+	</div>
+$ git add editme.html
+$ git commit -m "added a new quote"
+$ git push
+$ git push origin test1
+Note:
+	Go to git hub and test
+	Create a new branch test2 in git hub
+	
+$ git fetch && git checkout featureCbranch
+$ git branch
+$ git status

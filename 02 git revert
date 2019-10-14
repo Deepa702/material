@@ -1,0 +1,16 @@
+$ mkdir fold1 
+$ cd fold1
+$ git status
+$ git init
+$ git status
+$ touch file1 file2
+$ ls
+$ git status
+$ git add .
+$ git status
+$ git commit -m "First change"
+$ ls
+$ git log --oneline|more
+$ git revert 1f08a70
+$ ls
+

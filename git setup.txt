@@ -1,0 +1,5 @@
+First-Time Git Setup
+$ git config --global core.editor emacs
+$ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -nosession"
+
+

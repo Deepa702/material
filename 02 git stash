@@ -1,0 +1,50 @@
+$touch {1,2}.txt
+$git add .
+$git commit -M "Commit A: added 1,2.txt
+
+$ git status
+
+$ touch file{1,2}.txt
+$ ls
+$ git add .
+$ touch file{3,4}.txt
+$ cat >> 2.txt
+$
+$ git status
+$
+====================================
+
+$ git stash
+
+$ git stash -u
+
+$ ls
+
+$ git stash pop
+
+====================================================================
+$ git stash apply
+
+$ ls
+1.txt      2.txt      3.txt      README.md  f1         f2         file1.txt  file2.txt  file3.txt  file4.txt
+
+====================================================
+$ git stash list
+
+
+stash@{1}: On branch1: 2st new way to stash
+stash@{2}: On branch1: 1st new way to stash
+stash@{3}: WIP on branch1: ae0561a 4th change
+stash@{4}: WIP on branch1: ae0561a 4th change
+stash@{5}: WIP on branch1: ae0561a 4th change
+stash@{6}: WIP on branch1: ae0561a 4th change
+
+============================================
+$ git stash pop stash@{3}
+
+$ git stash pop stash@{6}
+
+$ git stash pop stash@{7}
+=========================
+
+

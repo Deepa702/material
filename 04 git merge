@@ -1,0 +1,21 @@
+git branch branch1
+git checkout branch1
+touch fiel1
+ls
+cat > file1
+git all .
+git add .
+git commit -m "2nd from branch branch1"
+git log --oneline --graph --decorate|more
+
+git checkout master
+touch file2
+cat > file1
+git add .
+git commit -m "3rd commit from master"
+git log --oneline --graph --decorate|more
+git checkout branch1
+git log --oneline --graph --decorate|more
+git merge branch1 master
+git log --oneline --graph --decorate|more
+$git branch -d branch1

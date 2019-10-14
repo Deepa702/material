@@ -1,0 +1,40 @@
+mkdir proj2
+cd proj2
+git init
+cat >> file1
+cat >> file2
+git add .
+ls
+git commit -m "1st from master"
+git log
+git log --oneline
+git checkout -b new-feature master
+cat >>file1
+git commit -am "fix bug"
+git checkout -b hotfix master
+cat >>file2
+ls
+git commit -am "secuity hole fixing"
+git checkout master
+git branch
+git log --oneline
+git merge hotfix
+git log --oneline
+ls
+git branch -d hotfix
+git checkout new-feature
+git rebase master
+git log --oneline
+git branch
+git checkout master
+git log --oneline
+git merge new-feature
+git log --oneline
+git checkout new-feature
+git log --oneline
+git checkout master
+git branch -d new-feature
+git log --oneline
+ls
+
+

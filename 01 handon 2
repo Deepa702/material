@@ -1,0 +1,39 @@
+git help config
+
+git config --global user.name "chinnajee rao"
+git config --global user.email "chinnajee.rao@gmail.com"
+git config --global github.user chinnajee
+git config --global github.token R@jara072
+
+============================================================
+
+echo "# test1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+
+====================================
+echo "# test 2" >> test1.txt
+git add test1.txt
+git commit -m "second commit"
+git remote add origin https://github.com/chinnajee/test2.git
+git push -u origin master
+======================================================================
+echo "# test3" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/chinnajee/test3.git
+git push -u origin master
+=======================================================================
+echo "# nfold1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/chinnajee/mynewfold1.git
+git push -u origin master
+==========================================================================
+git clone https://github.com/chinnajee/mynewfold1.git
+ls
+
+
